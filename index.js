@@ -24,4 +24,7 @@ let app= new App({
 })
 contours.forEach(c => app.addContour(c, {has_head_marker:true}))
 
+// undo test
+document.getElementById("undo-test").onclick= app.history.undo.bind(app.history)
+
 app.reset()

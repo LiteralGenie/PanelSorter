@@ -40,8 +40,8 @@ class SegmentMenu extends BaseMenu {
 		let rem_opt= new OptRemoveSeg(this)
 		this.createOption(rem_opt.text, rem_opt.cb)
 
-		let undo_opt= new OptUndo(this)
-		this.createOption(undo_opt.text, undo_opt.cb)
+		// let undo_opt= new OptUndo(this)
+		// this.createOption(undo_opt.text, undo_opt.cb)
 	}
 }
 
