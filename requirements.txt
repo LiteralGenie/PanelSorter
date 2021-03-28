@@ -1,0 +1,9 @@
+mako
+ruamel.yaml
+opencv-python
+tensorflow
+
+# optional -- for generating dataset / labeling
+flask
+flask-socketio
+eventlet

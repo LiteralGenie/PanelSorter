@@ -1,0 +1,23 @@
+/*** MENUS ***/
+.menu {
+    margin: 0px;
+    list-style: none;
+    padding: 6px;
+    background: lightgray;
+    border-radius: 4px;
+    border: thin solid black;
+    font-size: larger;
+}
+
+.option.active {
+    background: #c4c4c4;
+}
+
+.menu > .option:not(:last-child){
+    border-bottom: thin solid black;
+    padding-bottom: 2px;
+}
+
+.menu > .option:not(:first-child) {
+    padding-top: 2px
+}

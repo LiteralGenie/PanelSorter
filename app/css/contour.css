@@ -1,0 +1,64 @@
+/*** FOR JS REFERENCING ***/
+:root {
+    --arrow-scale: 16;
+    --arrow-scale-enlarged: 25;
+    --vertex-radius: 7;
+    --global-stroke: 3;
+}
+
+/*** SVG POINTS ***/
+.point:not(.center) > .inner { /* display size */
+    r: var(--vertex-radius);
+    /*opacity: 0.5;*/
+}
+
+.point:not(.center) > .outer { /* focused size */
+    r: 11;
+}
+
+.point:not(.center) > .outermost { /* hover dist */
+    r: 18;
+}
+
+/*** SVG CENTER POINTS ***/
+.point.center > .inner { /* display size */
+    r: 6;
+}
+
+.point.center > .outer { /* focused size */
+    r: 9;
+}
+
+.point.center > .outermost { /* hover dist */
+    r: 12;
+}
+
+/*** SVG SEGMENTS ***/
+.segment > .inner { /* display size */
+    stroke-width: 3;
+}
+
+.segment > .outer { /* focused size */
+    stroke-width: 7;
+}
+
+.segment > .outermost { /* hover dist */
+    stroke-width: 30;
+}
+
+/*** SVG CONTOURS ***/
+g.contour {
+    opacity: 0.5;
+    fill: red;
+    stroke: red;
+    stroke-width: var(--global-stroke);
+}
+
+/*** SVG CENTRAL CONTOUR ***/
+g.central > .center {
+    display: none;
+}
+
+g.central > .point-group {
+    display: none;
+}

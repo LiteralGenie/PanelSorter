@@ -1,0 +1,5 @@
+# Project exclude paths
+/data/datasets/cached/
+/data/datasets/original/
+!/data/datasets/original/knight_run/001-002.json
+/venv/

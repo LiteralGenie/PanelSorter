@@ -1,0 +1,33 @@
+<head>
+    <style>
+    #image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+
+{% if text %}
+    <div id="text">{{ text }}</div>
+    <img id="image">
+{% else %}
+    <div id="text"></div>
+    <img id="image" src="data:image/png;base64, {{ image }}">
+{% endif %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
+<script>
+const socket = io();
+socket.on('update', function (message) {
+    console.log(message);
+    document.getElementById('image').src= "data:image/png;base64," + message;
+    document.getElementById('text').textContent= "";
+    window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+
+</html>
