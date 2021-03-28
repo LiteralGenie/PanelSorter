@@ -1,4 +1,4 @@
-import {App} from "./js/classes/app.js"
+import {App} from "./app/js/classes/app.js"
 
 
 let svg= document.querySelector("[id=svg-main]");
