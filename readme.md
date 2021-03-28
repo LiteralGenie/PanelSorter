@@ -16,4 +16,4 @@ Online demo:
 - https://yvb95.csb.app/
 - (with source code) https://codesandbox.io/s/billowing-wildflower-yvb95?file=/index.html
 
-![](https://files.catbox.moe/a2999i.png)
+![](https://files.catbox.moe/3yt2br.png)
