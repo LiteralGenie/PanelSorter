@@ -37,7 +37,7 @@ class App {
         let tmp= new Contour(points, {svg:this.svg, parent:this, ...kwargs})
 
         // add center of contour to central_contour
-        this.central_contour.manager.insertPoint(tmp.center.loc, this.contours.length)
+        // this.central_contour.manager.insertPoint(tmp.center.loc, this.contours.length)
 
         // insert
         this.contours.push(tmp)

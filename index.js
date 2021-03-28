@@ -15,7 +15,7 @@ let undo_list= document.getElementById("undo-list")
 let contours= [
     [[100,100], [100,200], [200,200], [200,100]],
     [[200,300], [200,400], [100,400], [100,300]],
-    [...Array(3).keys()].map(_ => [Math.random()*300 +300, Math.random()*300 +200]),
+    // [...Array(3).keys()].map(_ => [Math.random()*300 +300, Math.random()*300 +200]),
 ]
 
 let app= new App({
